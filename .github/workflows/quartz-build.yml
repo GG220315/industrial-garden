@@ -28,10 +28,10 @@ jobs:
         with:
           build_dir: ./public
 
-      - name: Deploy
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
 
-      - name: Publish Pages
+      - name: Deploy Pages
         uses: actions/deploy-pages@v1
